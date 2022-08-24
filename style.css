@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root {
     --Dark-cyan: hsl(185, 75%, 39%);
@@ -7,20 +7,93 @@
     --Dark-gray: hsl(0, 0%, 59%);
 }
 
-
-
-
-
-
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    border: 1px solid;
-    border-color: brown;
+    overflow: hidden;
+}
+/*----------------------------------------------------------*/
+body { 
+    background-color: var(--Dark-cyan);
 }
 
-.background {
-    background-color: var(--Dark-cyan);
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 460px;
+    background-color: white;
+    border-radius: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    margin-left: 750px;
+    margin-top: 250px;
+    position: relative
+}
+
+.card-container .card-images .image-header {
+    width: 450px;
+}
+
+.card-container .card-images .image-user {
+    width: 150px;
+    margin-left: 9.5rem;
+    margin-top: -5.2rem;
+}
+
+.container-user-description .name {
+    margin-bottom: 10px;
+    color: var(--Verydark-desaturated-blue);
+    font-size: 20px;
+}
+
+.container-user-description span {
+    padding-left: 10px;
+    color: var(--Darkgrayish-blue);
+}
+
+.container-user-description .location {
+    padding-left: 45px;
+    color: var(--Darkgrayish-blue);
+}
+
+hr {
+    margin-top: 20px;
+    opacity: 0.4;
+}
+
+.container-user-stats {
+    margin-top: 30px;
+}
+
+.container-user-stats .numerical-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--Verydark-desaturated-blue);
+    font-size: 25px;
+}
+
+.container-user-stats .numerical-stats .Likes {
+    margin-right: 60px;
+    margin-left: 55px;
+    padding-left: 5px;
+}
+
+.container-user-stats .tagline-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    width: 450px;
+    color: var(--Darkgrayish-blue);
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.container-user-stats .tagline-stats .tagline-2 {
+    margin-left: 53px;
+    margin-right: 60px;
 }
 
